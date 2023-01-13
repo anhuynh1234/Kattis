@@ -25,7 +25,7 @@ int main(){
                         words.push_back(word);
                         word.clear();
                     default:
-                        word += instance[i];
+                        if (instance[i] != ' '){word += instance[i];}
                 }
             }
             std::remove(word.begin(), word.end(), ' ');
