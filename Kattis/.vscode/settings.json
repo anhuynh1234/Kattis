@@ -31,6 +31,11 @@
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "vector": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "map": "cpp",
+        "functional": "cpp",
+        "utility": "cpp"
     }
 }
