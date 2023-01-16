@@ -4,15 +4,15 @@
 #include <cmath>
 
 int main(){
-    float xg, yg, xd, yd;
+    double xg, yg, xd, yd;
     bool escape = false;
-    float xc, yc;
+    double xc, yc;
     std::string coord;
     std::string temp_coord;
     std::cin >> xg >> yg >> xd >> yd;
     std::cin.ignore();
-    std::vector <std::vector <float>> caves;
-    float xca, yca;
+    std::vector <std::vector <double>> caves;
+    double xca, yca;
 
     do{
         getline(std::cin, coord);
@@ -27,15 +27,15 @@ int main(){
             }
             yc = std::stof(temp_coord);
             temp_coord.clear();
-            caves.push_back({yc, xc});
+            caves.push_back({xc, yc});
             xc = 0; yc = 0;
         }
     }while(!coord.empty());
 
     for(auto x : caves){
         
-        float gop_dist = std::sqrt((std::pow((xg - x[0]), 2) + std::pow((yg - x[1]), 2)));
-        float dog_dist = std::sqrt((std::pow((xd - x[0]), 2) + std::pow((yd - x[1]), 2)));
+        double gop_dist = std::sqrt((std::pow((xg - x[0]), 2) + std::pow((yg - x[1]), 2)));
+        double dog_dist = std::sqrt((std::pow((xd - x[0]), 2) + std::pow((yd - x[1]), 2)));
         
 
         if (gop_dist*2 <= dog_dist){
