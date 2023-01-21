@@ -36,6 +36,7 @@
         "deque": "cpp",
         "map": "cpp",
         "functional": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "queue": "cpp"
     }
 }
